@@ -37,7 +37,7 @@
           responseEl.textContent = 'Ошибка: заполните ID Instance и API Token';
           return;
         }
-        const url = `https://api.green-api.com/waInstance${idInstance}/${endpoint}/${apiTokenInstance}`;
+        const url = `https://api.green-api.com/waInstance/${idInstance}/${endpoint}/${apiTokenInstance}`; 
         const options = { method };
         if (body) {
           options.headers = { 'Content-Type': 'application/json' };
